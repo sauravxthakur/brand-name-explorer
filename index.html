@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A considered index of premium brand names for creative technology." />
+    <title>Names — A considered brand index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav shell">
+      <a class="wordmark" href="#top" aria-label="Names home">names<span>.</span></a>
+      <span class="nav-note">A considered index / 2026</span>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <p class="eyebrow">01 — The naming room</p>
+        <h1>Find the name<br /><em>worth building.</em></h1>
+        <p class="intro">A quiet collection of names for a company at the intersection of creative intelligence, visual craft, and engineered scale.</p>
+        <div class="hero-meta"><span>Curated selection</span><span id="count">24 names</span></div>
+      </section>
+
+      <section class="index shell" id="index">
+        <div class="section-head">
+          <p class="eyebrow">02 — The index</p>
+          <div class="filters" role="group" aria-label="Filter names">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="creative">Creative</button>
+            <button class="filter" data-filter="technical">Technical</button>
+            <button class="filter" data-filter="global">Global</button>
+          </div>
+        </div>
+        <div class="grid" id="name-grid"></div>
+      </section>
+    </main>
+
+    <dialog id="detail-modal" aria-labelledby="detail-name">
+      <button class="close" aria-label="Close details">×</button>
+      <div class="modal-inner">
+        <p class="eyebrow" id="detail-category"></p>
+        <h2 id="detail-name"></h2>
+        <p class="meaning" id="detail-meaning"></p>
+        <div class="detail-rule"></div>
+        <dl>
+          <div><dt>Best expression</dt><dd id="detail-expression"></dd></div>
+          <div><dt>Why it works</dt><dd id="detail-why"></dd></div>
+          <div><dt>Domain routes</dt><dd id="detail-domain"></dd></div>
+        </dl>
+      </div>
+    </dialog>
+    <footer class="shell footer"><span>Made for the next thing.</span><span>names / private index</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
