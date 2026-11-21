@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="search.css" />
   </head>
   <body>
     <header class="nav shell">
@@ -34,6 +34,7 @@
             <button class="filter" data-filter="global">Global</button>
           </div>
         </div>
+        <label class="search"><span>Search the library</span><input id="search" type="search" placeholder="Name, meaning, category…" /></label>
         <div class="grid" id="name-grid"></div>
       </section>
     </main>
@@ -53,6 +54,6 @@
       </div>
     </dialog>
     <footer class="shell footer"><span>Made for the next thing.</span><span>names / private index</span></footer>
-    <script src="script.js"></script>
+    <script src="names-data.js"></script><script src="script.js"></script>
   </body>
 </html>
